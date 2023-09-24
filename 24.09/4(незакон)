@@ -2,4 +2,4 @@ x = input('Сколько школьников?')
 y = input('Сколько мандаринов?')
 x = int(x)
 y = int(y)
-summa = x/y
+summa = y/x
