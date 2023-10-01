@@ -1,0 +1,6 @@
+h = input("Высота? ")
+R = input("Радиус? ")
+h = int(h)
+R = int(R)
+p = 3.14
+print("V = ", p*(R**2)*h)
