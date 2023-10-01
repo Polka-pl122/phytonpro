@@ -1,0 +1,5 @@
+x = input("Первое число? ")
+y = input("Второе число? ")
+x = float(x)
+y = float(y)
+print(x-y)
