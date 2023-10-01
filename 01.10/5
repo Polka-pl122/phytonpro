@@ -1,0 +1,8 @@
+s = input("Займ? ")
+n = input("На сколько лет? ")
+p = input("Процент? ")
+s = int(s)
+n = int(n)
+p = int(p)
+r = p/100
+print("m = ", s*r*((1 + r)*n) / (12 * ((1 + r)*n - 1)))
