@@ -1,0 +1,7 @@
+a = input("Число a: ")
+b = input("Число b: ")
+c = input("Число c: ")
+a = int(a)
+b = int(b)
+c = int(c)
+print(2*a+3*b-4*c)
