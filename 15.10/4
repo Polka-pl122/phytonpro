@@ -1,0 +1,4 @@
+#float вместо int
+lojki = float(input("Введите количество ложек: "))
+litryVody = lojki * 0.5
+print("Нужно добавить", litryVody, "литров воды")
