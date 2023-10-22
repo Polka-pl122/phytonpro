@@ -1,0 +1,5 @@
+import pyautogui
+pyautogui.moveTo(1365,758)
+pyautogui.click()
+pyautogui.moveTo(1249,656)
+pyautogui.doubleClick()
