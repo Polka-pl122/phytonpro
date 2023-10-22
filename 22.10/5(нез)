@@ -1,0 +1,17 @@
+import pyautogui
+import time
+pyautogui.moveTo(1365,758)
+pyautogui.click()
+pyautogui.moveTo(850,684)
+pyautogui.doubleClick()
+pyautogui.moveTo(690,139)
+pyautogui.click()
+time.sleep(1)
+pyautogui.moveTo(685,173)
+pyautogui.click()
+pyautogui.moveTo(659,205)
+time.sleep(1)
+pyautogui.click()
+pyautogui.moveTo(600,330)
+pyautogui.keyDown(button='right')
+pyautogui.moveTo(600,400)
