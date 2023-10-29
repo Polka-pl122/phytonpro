@@ -1,14 +1,17 @@
 import pyautogui
 x = input(str('Логин? '))
-y = input(int('Пароль? '))
+y = input(str('Пароль? '))
 if (x!='aaaaa'):
     pyautogui.alert(text='Логин неверен', title=' ', button='OK')
 
-if (y!=12345):
+if (y!='12345'):
     pyautogui.alert(text='Пароль неверен', title=' ', button='OK')
     
-if ((x!='aaaaa') and (y!=12345)):
+if ((x!='aaaaa') and (y!='12345')):
     pyautogui.alert(text='Пароль и логин неверны', title=' ', button='OK')
     
-if((x=='aaaaa') and (y==12345)):
-    pyautogui.moveTo(
+if((x=='aaaaa') and (y=='12345')):
+    pyautogui.moveTo(1365,736)
+    pyautogui.click()
+    pyautogui.moveTo(1330,650)
+    pyautogui.doubleClick()
