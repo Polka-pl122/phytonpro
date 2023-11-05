@@ -1,0 +1,19 @@
+import pyautogui
+import time
+x = int(input("Влажность? "))
+y = int(input("Температура? "))
+a = str("Тревога!")
+b = str("Всё нормально.")
+
+if ((x > 60) and (y < 10)) or ((x < 30) and (y > 30)):
+    print(a)
+    pyautogui.moveTo(174, 750)
+    pyautogui.click()
+    pyautogui.moveTo(210, 58)
+    pyautogui.click()
+    time.sleep(1)
+    pyautogui.write('xnj ltkfnm ghb yfheitybb eckjdbq d jhfy;thtt')
+    pyautogui.press('enter')
+    
+if ((x < 60) and (y > 10)) or ((x > 30) and (y < 30)):
+    print(b)
