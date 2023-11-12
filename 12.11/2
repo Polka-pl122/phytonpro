@@ -1,0 +1,24 @@
+x = int(input('Введите первое число '))
+y = int(input('Введите второе число '))
+z = int(input('Введите третье число '))
+a = int(input('Введите четвёртое число '))
+if ((x < y)and (x<z)and (x<a)):
+    print(x)
+if ((y<x) and(y<z) and(y<a)):
+    print(y)
+if ((z<x)and(z<y)and(z<a)):
+    print(z)
+if ((a<x)and(a<y)and(a<z)):
+    print(a)
+if ((x==y)and((x<z)and (x<a))):
+    print(x, y)
+if((x==z)and((x<y)and(x<a))):
+    print(x, z)
+if ((x==a)and((x<y)and(x<z))):
+    print(x, a)
+if ((y==z)and((y<x)and(y<a))):
+    print(y, z)
+if((y==a)and((y<x)and(y<z))):
+    print(y, a)
+if((z==a)and((z<x)and(z<y))):
+    print(z, a)
