@@ -1,0 +1,20 @@
+x = int(input('Введите первое число '))
+y = int(input('Введите второе число '))
+z = int(input('Введите третье число '))
+if ((x<0)and(y<0)and(z<0)):
+    print('Все числа отрицательные')
+if ((x<0)and (y>=0)and(z>=0)):
+    print(y+z)
+if ((x<0)and (y<0)and(z>=0)):
+    print(z)
+if ((x>=0)and(y<0)and(z<0)):
+    print(x)
+if ((x<0)and(y>=0)and(z<0)):
+    print(y)
+if((x>=0)and(y>=0)and(z>=0)):
+    print(x+y+z)
+if((x>=0)and(y>=0)and(z<0)):
+    print(x+y)
+if((x>=0)and(y<0)and(z>=0)):
+    print(x+z)
+
