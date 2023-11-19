@@ -1,0 +1,10 @@
+x = int(input('Число?'))
+y = x%100
+z = x%4
+a = x%400
+if((z == 0)and (y != 0)):
+    print('yes')
+elif(a==0):
+    print('yes')
+else:
+    print('no')
