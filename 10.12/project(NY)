@@ -1,0 +1,63 @@
+import pyautogui
+import time
+pyautogui.hotkey('win','r')
+pyautogui.write('iexplore')
+pyautogui.press('enter')
+time.sleep(2)
+pyautogui.moveTo(197, 33)
+pyautogui.click()
+pyautogui.write('https://clck.ru/TGWXA')
+pyautogui.press('enter')
+pyautogui.moveTo(1100,30)
+pyautogui.click()
+time.sleep(1)
+x = input('Какую песню будем играть? ')
+z = 'ny'
+y = 'ch'
+c = 'stop'
+while(x!=c):
+    if(x==z):
+        pyautogui.press('')
+        time.sleep()
+        
+    if((x!=c)and(x!=z)and(x!=y)):
+        print('Неизвестная команда')
+        
+    if (x == y):
+        pyautogui.press('1')
+        time.sleep(0.25)
+        pyautogui.press('3')
+        time.sleep(0.25)
+        pyautogui.press('5')
+        time.sleep(0.25)
+        pyautogui.press('5')
+        time.sleep(0.25)
+        pyautogui.press('5')
+        time.sleep(0.25)
+        pyautogui.press('4')
+        time.sleep(0.25)
+        pyautogui.press('5')
+        time.sleep(0.25)
+        pyautogui.press('6')
+        time.sleep(0.25)
+        pyautogui.press('5')
+        time.sleep(0.25)
+        pyautogui.press('8')
+        time.sleep(0.25)
+        pyautogui.press('3')
+        time.sleep(0.25)
+        pyautogui.press('2')
+        time.sleep(0.25)
+        pyautogui.press('2')
+        time.sleep(0.25)
+        pyautogui.press('2')
+        time.sleep(0.25)
+        pyautogui.press('3')
+        time.sleep(0.25)
+        pyautogui.press('4')
+        time.sleep(0.25)
+        pyautogui.press('5')
+        time.sleep(0.25)
+        pyautogui.press('3')
+        time.sleep(0.25)
+x = input('Какую песню будем играть? ')
