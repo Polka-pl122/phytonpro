@@ -17,21 +17,33 @@ y = 'chunga'
 c = 'stop'
 while(x!=c):
     if(x==z):
-        pyautogui.press('2')
+        pyautogui.press('e')
+        time.sleep(0.30)
+        pyautogui.press('e')
+        time.sleep(0.30)
+        pyautogui.press('e')
         time.sleep(0.25)
-        pyautogui.press('3')
+        pyautogui.press('e')
+        time.sleep(0.6)
+        pyautogui.press('y')
+        time.sleep(0.5)
+        pyautogui.press('t')
+        time.sleep(0.3)
+        pyautogui.press('t')
+        time.sleep(0.5)
+        pyautogui.press('r')
         time.sleep(0.25)
-        pyautogui.press('4')
+        pyautogui.press('r')
         time.sleep(0.25)
-        pyautogui.press('5')
+        pyautogui.press('e')
         time.sleep(0.25)
-        pyautogui.press('6')
+        pyautogui.press('e')
         time.sleep(0.25)
-        pyautogui.press('7')
-        time.sleep(0.25)
-        pyautogui.press('8')
-        time.sleep(0.25)
-        pyautogui.press('9')
+        pyautogui.press('space')
+        time.sleep(0.7)
+        pyautogui.press('c')
+        time.sleep(0.5)
+        
         x=c
               
     if((x!=c)and(x!=z)and(x!=y)):
@@ -73,8 +85,12 @@ while(x!=c):
         pyautogui.press('5')
         time.sleep(0.25)
         pyautogui.press('3')
+        time.sleep(1)
+        pyautogui.press('space')
+        time.sleep(0.7)
+        pyautogui.press('c')
+        time.sleep(0.5)
+
         x=c
 
 pyautogui.hotkey('ctrl','f4')
-
-x = input('Какую песню будем играть? ')
