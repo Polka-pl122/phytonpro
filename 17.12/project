@@ -2,7 +2,7 @@ import pyautogui
 import time
 x = input('Какую песню будем играть? ')
 pyautogui.hotkey('win','r')
-pyautogui.write('iexplore')
+pyautogui.write('chrome')
 pyautogui.press('enter')
 time.sleep(2)
 pyautogui.moveTo(197, 37)
@@ -17,21 +17,22 @@ y = 'chunga'
 c = 'stop'
 while(x!=c):
     if(x==z):
-        pyautogui.press('')
+        pyautogui.press('2')
         time.sleep(0.25)
-        pyautogui.press('')
+        pyautogui.press('3')
         time.sleep(0.25)
-        pyautogui.press('')
+        pyautogui.press('4')
         time.sleep(0.25)
-        pyautogui.press('')
+        pyautogui.press('5')
         time.sleep(0.25)
-        pyautogui.press('')
+        pyautogui.press('6')
         time.sleep(0.25)
-        pyautogui.press('')
+        pyautogui.press('7')
         time.sleep(0.25)
-        pyautogui.press('')
+        pyautogui.press('8')
         time.sleep(0.25)
-        pyautogui.press('')
+        pyautogui.press('9')
+        x=c
               
     if((x!=c)and(x!=z)and(x!=y)):
         print('Неизвестная команда')
@@ -72,5 +73,8 @@ while(x!=c):
         pyautogui.press('5')
         time.sleep(0.25)
         pyautogui.press('3')
-        
+        x=c
+
+pyautogui.hotkey('ctrl','f4')
+
 x = input('Какую песню будем играть? ')
