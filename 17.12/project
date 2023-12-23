@@ -2,35 +2,29 @@ import pyautogui
 import time
 x = input('Какую песню будем играть? ')
 pyautogui.hotkey('win','r')
-pyautogui.write('chrome')
-pyautogui.press('enter')
-time.sleep(2)
-pyautogui.moveTo(197, 37)
-pyautogui.click()
 pyautogui.write('https://clck.ru/TGWXA')
 pyautogui.press('enter')
-pyautogui.moveTo(1100,30)
-pyautogui.click()
-time.sleep(1)
+time.sleep(2)
+
 z = 'ny'
 y = 'chunga'
 c = 'stop'
 while(x!=c):
     if(x==z):
         pyautogui.press('e')
-        time.sleep(0.30)
-        pyautogui.press('e')
-        time.sleep(0.30)
+        time.sleep(0.25)
         pyautogui.press('e')
         time.sleep(0.25)
         pyautogui.press('e')
-        time.sleep(0.6)
+        time.sleep(0.25)
+        pyautogui.press('e')
+        time.sleep(0.25)
         pyautogui.press('y')
-        time.sleep(0.5)
-        pyautogui.press('t')
         time.sleep(0.3)
         pyautogui.press('t')
-        time.sleep(0.5)
+        time.sleep(0.25)
+        pyautogui.press('t')
+        time.sleep(0.25)
         pyautogui.press('r')
         time.sleep(0.25)
         pyautogui.press('r')
@@ -40,9 +34,9 @@ while(x!=c):
         pyautogui.press('e')
         time.sleep(0.25)
         pyautogui.press('space')
-        time.sleep(0.7)
+        time.sleep(1)
         pyautogui.press('c')
-        time.sleep(0.5)
+        time.sleep(1.5)
         
         x=c
               
@@ -87,9 +81,9 @@ while(x!=c):
         pyautogui.press('3')
         time.sleep(1)
         pyautogui.press('space')
-        time.sleep(0.7)
+        time.sleep(1)
         pyautogui.press('c')
-        time.sleep(0.5)
+        time.sleep(1.5)
 
         x=c
 
