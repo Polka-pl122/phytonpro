@@ -7,7 +7,7 @@ pyautogui.press('enter')
 time.sleep(2)
 
 z = 'ny'
-y = 'chunga'
+y = 'ch'
 c = 'stop'
 while(x!=c):
     if(x==z):
