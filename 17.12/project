@@ -1,16 +1,24 @@
 import pyautogui
 import time
-x = input('Какую песню будем играть? ')
-pyautogui.hotkey('win','r')
-pyautogui.write('https://clck.ru/TGWXA')
-pyautogui.press('enter')
-time.sleep(2)
 
+x = ''
 z = 'ny'
 y = 'ch'
 c = 'stop'
+a = 'we'
 
 while(x!=c):
+    if x == '':
+        x = input('Какую песню будем играть? ')
+    
+    pyautogui.hotkey('win','r')
+    pyautogui.write('https://clck.ru/TGWXA')
+    pyautogui.press('enter')
+    time.sleep(2)
+
+    if((x!=c) and (x!=z) and (x!=y)):
+        print('Неизвестная команда')
+
     if(x==z):
         pyautogui.press('e')
         time.sleep(0.3)
@@ -35,14 +43,9 @@ while(x!=c):
         pyautogui.press('e')
         time.sleep(0.25)
         pyautogui.press('space')
-        time.sleep(1)
+        time.sleep(0.5)
         pyautogui.press('c')
         time.sleep(1.5)
-        
-        x=c
-              
-    if((x!=c)and(x!=z)and(x!=y)):
-        print('Неизвестная команда')
         
     if (x == y):
         pyautogui.press('1')
@@ -52,25 +55,25 @@ while(x!=c):
         pyautogui.press('5')
         time.sleep(0.25)
         pyautogui.press('5')
-        time.sleep(0.25)
+        time.sleep(1)
         pyautogui.press('5')
         time.sleep(0.25)
         pyautogui.press('4')
-        time.sleep(0.25)
+        time.sleep(0.2)
         pyautogui.press('5')
-        time.sleep(0.25)
+        time.sleep(0.2)
         pyautogui.press('6')
-        time.sleep(0.25)
+        time.sleep(0.2)
         pyautogui.press('5')
-        time.sleep(0.25)
+        time.sleep(1)
         pyautogui.press('8')
-        time.sleep(0.25)
+        time.sleep(0.5)
         pyautogui.press('3')
         time.sleep(0.25)
         pyautogui.press('2')
-        time.sleep(0.25)
+        time.sleep(0.2)
         pyautogui.press('2')
-        time.sleep(0.25)
+        time.sleep(1)
         pyautogui.press('2')
         time.sleep(0.25)
         pyautogui.press('3')
@@ -82,10 +85,10 @@ while(x!=c):
         pyautogui.press('3')
         time.sleep(1)
         pyautogui.press('space')
-        time.sleep(1)
+        time.sleep(0.5)
         pyautogui.press('c')
         time.sleep(1.5)
 
-        x=c
+    pyautogui.hotkey('ctrl','f4')
 
-pyautogui.hotkey('ctrl','f4')
+    x = input('Какую песню будем играть? ')
