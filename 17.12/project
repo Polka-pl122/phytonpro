@@ -23,15 +23,15 @@ while(x!=c):
 
         if(x==z):
             pyautogui.press('e')
-            time.sleep(0.3)
+            time.sleep(0.5)
             pyautogui.press('e')
-            time.sleep(0.3)
+            time.sleep(0.5)
             pyautogui.press('e')
             time.sleep(0.25)
             pyautogui.press('e')
             time.sleep(0.25)
             pyautogui.press('y')
-            time.sleep(0.3)
+            time.sleep(0.4)
             pyautogui.press('t')
             time.sleep(0.25)
             pyautogui.press('t')
