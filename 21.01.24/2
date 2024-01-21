@@ -1,0 +1,7 @@
+summ = 0
+n = int(input('Введите число '))
+for step in range(n):
+    x=int(input('Число '))
+    summ = summ + x
+    
+print(summ)
