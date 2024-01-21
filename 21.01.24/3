@@ -1,0 +1,6 @@
+n = int(input('Введите число '))
+for i in range(n):
+    i = i + n
+    
+print(i)
+
