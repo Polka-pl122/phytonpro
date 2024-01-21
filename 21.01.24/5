@@ -1,0 +1,7 @@
+import pyautogui
+n = int(input('Введите число от 1 до 9 '))
+pyautogui.moveTo(370,768)
+pyautogui.click()
+for i in range(n):
+    pyautogui.hotkey('ctrl','t')
+    
