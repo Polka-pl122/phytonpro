@@ -1,0 +1,21 @@
+summ= 0
+p = 1
+n = int(input('Сколько элементов? '))
+list1=[]
+for i in range(n):
+    x = int(input('Введите число '))
+    list1.append(x)
+    
+for i in range(len(list1)):
+
+    if (list1[i]%2==0):
+        summ+=list1[i]
+        p = p * list1[i]
+    
+print(summ, p )
+
+    
+    
+
+
+
