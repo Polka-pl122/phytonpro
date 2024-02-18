@@ -1,0 +1,9 @@
+list1 = []
+for i in range(0,100,1):
+    if(i<4):
+        list1.append(i)
+    if(i>3):
+        i = 0
+    
+    
+print(list1)
