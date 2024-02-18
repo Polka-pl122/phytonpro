@@ -1,0 +1,5 @@
+list1 = []
+for i in range(4,21,4):
+    list1.append(i)
+    
+print(list1)
