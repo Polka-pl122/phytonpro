@@ -1,0 +1,6 @@
+def f(n):
+    print('privet',n)
+
+f('Ira')
+f('Oleg')
+f(input())
