@@ -1,0 +1,10 @@
+def fio (n,s,p):
+    return n[0]+s[0]+p[0]
+      
+n1 = input('Имя? ')
+s1 = input('Фамилия? ')
+p1 = input('Отчество? ')
+print(fio(s1,n1,p1))
+
+
+
