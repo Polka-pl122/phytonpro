@@ -1,0 +1,12 @@
+def f (n):
+    s = 0
+    while(n>=10):
+        s+=n%10
+        n=n//10
+    s= s + n
+    return  s
+    
+    
+s = int(input('Введите число '))
+print(f(s))
+ 
