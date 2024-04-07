@@ -1,0 +1,9 @@
+def f(n):    
+    if(n==1):
+        print(1)
+        return 1
+    print(n)
+    f(n-1)
+               
+n = int(input('Введите число '))
+f(n)
