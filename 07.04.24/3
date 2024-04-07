@@ -1,0 +1,16 @@
+def f(x,y,z):
+
+    if(x==y):
+        print(x)
+        return(x)
+    print(x)
+    f(x+z,y,z)
+
+        
+x = int(input('Введите число '))
+y = int(input('Введите число '))
+if(x<y):
+    z=1
+if(x>y):
+    z=-1
+f(x,y,z)
