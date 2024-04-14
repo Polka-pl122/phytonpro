@@ -1,0 +1,13 @@
+def f(n):
+    if(n==1):
+        print('YES')
+        return None
+    if(n%2!=0):
+        print('NO')
+        return None
+    else:
+        f(n/2)
+
+n=int(input('Введите число '))
+(f(n))
+
