@@ -1,24 +1,40 @@
-x = str(input('Введите пароль '))
-#Пароль должен соответсвовать данным параметрам:
-#содержит не менее 8 символов
-#содержит хотя бы одну цифру
-#не имеет повторяющихся символов, идущих подряд
-#не содержит следующих символов: !@№$%^&*()=+
-#пароль не содержит русских букв
-a = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
-b = 'abcdefghijklmnopqrstuvwxyz'
-c = '1234567890'
-d = '!@№$%^&*()=+'
-e = 'абвгдеёжзийклмнопрстуфхцчшщъыьэюя'
-f = 'АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ'
+import string
+#Проверка на надёжность пароля:
+#есть хотя бы одна заглавная буква
+#есть хотя бы одна маленькая буква
+#есть хотя бы одна цифра
+#есть хотя бы один специальный символ
+#длина пароля не менее 8 символов
 
-#проверка на дурака:
-
-if (x==d):
-    print('Пароль содержит запрещённые символы')
-if (x==e or x==f):
-    print('Пароль содержит запрещённые символы')
+password = input('Введите пароль ')
+upper_case = any([True if i in string.ascii_uppercase else False for i in password]) #проверка заглавных букв
+lower_case = any([True if i in string.ascii_lowercase else False for i in password]) #проверка маленьких букв
+special = any([True if i in string.punctuation else False for i in password]) #проверка специльных символов
+digits = any([True if i in string.digits else False for i in password]) #проверка цифр
+length = len(password) #длина пароля
+#проверка на длину пароля
+if (length >= 8):
+    length = True
+else:
+    length = False
     
+list1 = [upper_case, lower_case, special, digits, length]
+print(list1)
+
+score = 0
+#проверка на надёжность пароля
+for i in range(len(list1)):
+    if list1[i]:
+        score += 1
+print('Надёжность пароля: %s из 5' % score)
+
+if (score <= 2):
+    print('Слабый пароль')
+elif(score == 3 or score == 4):
+    print('Средний пароль')
+elif(score == 5):
+    print('Сильный пароль')
+
 
 
 
